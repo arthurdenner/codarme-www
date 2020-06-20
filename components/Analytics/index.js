@@ -3,15 +3,18 @@ import Head from 'next/head'
 import { GTMHead, GTMBody } from './gtm'
 import { FBPixel } from './fb-pixel'
 
-const fbPixelIds = process.env.FB_PIXEL_IDS.split(',')
-const gtmTag = process.env.GTM_TAG
+const HeadTags = () => (
+  <>
+    <GTMHead code={process.env.GTM_TAG} />
+    <FBPixel codes={process.env.FB_PIXEL_IDS.split(',')} />
+  </>
+)
 
-export const Analytics = ({ children }) => (
+export const Analytics = () => (
   <>
     <Head>
-      <GTMHead code={gtmTag} />
-      <FBPixel codes={fbPixelIds} />
+      <HeadTags />
     </Head>
-    <GTMBody code={gtmTag} />
+    <GTMBody code={process.env.GTM_TAG} />
   </>
 )
