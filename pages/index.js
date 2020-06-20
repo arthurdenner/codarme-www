@@ -48,7 +48,10 @@ const Form = ({ onSuccess }) => {
   })
 
   return (
-    <form className="p-4 text-white flex flex-col md:flex-1 md:max-w-sm">
+    <form
+      onSubmit={formik.handleSubmit}
+      className="p-4 text-white flex flex-col md:flex-1 md:max-w-sm"
+    >
       <Input
         type="text"
         name="name"
@@ -67,7 +70,7 @@ const Form = ({ onSuccess }) => {
         onChange={formik.setFieldValue}
         disabled={formik.isSubmitting}
       />
-      <Button onClick={formik.handleSubmit} disabled={formik.isSubmitting}>
+      <Button type="submit" disabled={formik.isSubmitting}>
         {(formik.isSubmitting && 'Deixa eu anotar aqui...') || 'Me avise!'}
       </Button>
     </form>
