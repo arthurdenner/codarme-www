@@ -6,9 +6,9 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <Analytics />
         <title>Codar.me - Desenvolvendo software de verdade</title>
       </Head>
+      <Analytics />
       <Component {...pageProps} />
     </>
   )
