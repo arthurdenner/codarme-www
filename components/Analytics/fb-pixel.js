@@ -17,15 +17,14 @@ export const FBPixel = ({ codes }) => {
             fbq('track', 'PageView');`,
         }}
       />
+      {codes.map((code) => (
+        <noscript
+          key={code}
+          dangerouslySetInnerHTML={{
+            __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=${code}&ev=PageView&noscript=1" />`,
+          }}
+        />
+      ))}
     </>
   )
 }
-
-export const FBPixelBody = ({ codes }) =>
-  codes.map((code) => (
-    <noscript
-      dangerouslySetInnerHTML={{
-        __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=${code}&ev=PageView&noscript=1" />`,
-      }}
-    />
-  ))

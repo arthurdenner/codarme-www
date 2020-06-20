@@ -1,4 +1,4 @@
-export const GTM = ({ code }) => (
+export const GTMHead = ({ code }) => (
   <script
     dangerouslySetInnerHTML={{
       __html: `
