@@ -22,7 +22,7 @@ const Presentation = () => (
 )
 
 const Form = ({ onSuccess }) => {
-  const onSubmit = async (values) => {
+  const onSubmit = async values => {
     try {
       await axios.post('/api/notify-me', values)
       fbq('track', 'Lead')
