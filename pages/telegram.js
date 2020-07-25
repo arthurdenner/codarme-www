@@ -22,9 +22,13 @@ const TelegramDescription = () => (
         <span className='pl-4 text-xl'>Descontos para nossos cursos!</span>
       </div>
     </div>
-    <div className='flex flex-col md:flex-1 md:max-w-sm'>
+    <a
+      href={'http://t.me/codarme'}
+      target='_blank'
+      className='flex flex-col md:flex-1 md:max-w-sm'
+    >
       <Button bg='bg-blue'>Entrar para o canal</Button>
-    </div>
+    </a>
   </div>
 );
 
