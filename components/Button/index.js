@@ -1,6 +1,6 @@
-export const Button = ({ ...props }) => (
+export const Button = ({ bg = 'bg-green', ...props }) => (
   <button
+    className={`p-4 rounded-md ${bg} ${props.disabled && 'opacity-50'}`}
     {...props}
-    className={`p-4 rounded-md bg-green ${props.disabled && 'opacity-50'}`}
   />
-)
+);
