@@ -44,7 +44,7 @@ const TelegramDescription = () => {
 
 const TelegramImage = () => (
   <div className="p-4 rounded-lg text-white text-center flex flex-col md:flex-1 md:max-w-sm hidden md:block">
-    <img src="/img/telegram.png" />
+    <img src="/img/audio-telegram.png" />
   </div>
 )
 
