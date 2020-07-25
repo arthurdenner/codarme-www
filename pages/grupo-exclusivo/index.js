@@ -35,7 +35,7 @@ const TelegramDescription = () => {
         className="flex flex-col md:flex-1 md:max-w-sm"
       >
         <Button bg="bg-blue" onClick={sendToTelegram}>
-          Entrar para o canal
+          Entrar para o grupo
         </Button>
       </a>
     </div>
@@ -63,7 +63,9 @@ const Telegram = () => (
     style={{ backgroundImage: 'url(/img/bg-hero.png)' }}
   >
     <div className="justify-center max-w-5xl container p-2 md:p-8 flex  sm:justify-start">
-      <Logo color="#FFF" height={50} color="#FFF" />
+      <a href="/">
+        <Logo color="#FFF" height={50} color="#FFF" />
+      </a>
     </div>
     <Jumbotron />
   </div>
