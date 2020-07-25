@@ -25,7 +25,7 @@ const Form = ({ onSuccess }) => {
   const onSubmit = async values => {
     try {
       await axios.post('/api/notify-me', values)
-      fbq('track', 'Lead')
+      fbq('track', 'Lead', { ...values })
       onSuccess()
     } catch (error) {
       console.log(error)
