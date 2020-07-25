@@ -11,7 +11,7 @@ const TelegramDescription = () => {
     <div className="p-3 text-white md:flex-1">
       <h1 className="text-3xl md:text-4xl lg:text-5xl">
         Participe do nosso grupo do
-        <span className="text-blue  font-bold"> Telegram</span>
+        <span className="text-blue font-bold"> Telegram</span>
       </h1>
       <div className="mt-10 mb-12">
         <div className="flex flex-row items-center mb-6">
