@@ -7,6 +7,7 @@ module.exports = {
         jungle: '#1a1d28',
         gunmetal: '#2e3142',
         green: '#43bc70',
+        blue: '#72B5E9',
         red: '#F25F5C',
       },
       container: {
@@ -14,4 +15,4 @@ module.exports = {
       },
     },
   },
-}
+};
