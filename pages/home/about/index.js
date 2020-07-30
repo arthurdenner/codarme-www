@@ -2,7 +2,7 @@ import { SocialLinksPerson } from '~/components/SocialLinksPerson'
 
 const Info = () => (
   <div className="p-4 text-white md:flex-1">
-    <h2 className="text-2xl font-semibold hidden md:block">
+    <h2 className="text-2xl md:text-3xl font-semibold hidden md:block">
       Seja guidado por quem já tem muita experiência!
     </h2>
     <p className="mt-6 mb-4">
@@ -25,8 +25,8 @@ const Info = () => (
 
 export const About = () => {
   return (
-    <div className="bg-gunmetal flex flex-1 flex-col">
-      <section className="max-w-5xl container p-2 flex-1 flex flex-col-reverse justify-center md:flex-row md:items-center md:p-4 lg:p-10">
+    <section className="bg-gunmetal flex flex-1 flex-col">
+      <div className="max-w-5xl container p-2 flex-1 flex flex-col-reverse justify-center md:flex-row md:items-center md:p-4 lg:p-10">
         <Info />
         <div className="p-4 rounded-lg text-white  flex flex-col md:flex-1 md:max-w-sm  md:block">
           <h2 className="text-2xl font-semibold md:hidden mt-6 mb-6">
@@ -34,7 +34,7 @@ export const About = () => {
           </h2>
           <img src="/img/bruno.png" />
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
