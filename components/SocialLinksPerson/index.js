@@ -5,7 +5,7 @@ import Insta from './icons/instagram.svg'
 import Linkedin from './icons/Linkedin.svg'
 
 export const SocialLinksPerson = () => (
-  <div className="flex flex-1 items-center justify-center mb-6 md:justify-start">
+  <div className="flex flex-1 items-center justify-center md:justify-start">
     <Link
       as={Linkedin}
       name="Linkedin"
