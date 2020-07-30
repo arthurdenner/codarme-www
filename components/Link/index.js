@@ -1,10 +1,4 @@
-export const Link = ({
-  as,
-  href,
-  name,
-  color = 'gray',
-  shouldTrackEvent = false,
-}) => {
+export const Link = ({ as, href, color = 'gray', trackID }) => {
   const Icon = as
 
   return (
@@ -12,7 +6,7 @@ export const Link = ({
       href={href}
       target="_blank"
       className="px-2 md:px-3"
-      onClick={() => shouldTrackEvent && fbq('track', `Lead.${name}`)}
+      onClick={() => trackID && fbq('track', trackID)}
     >
       <Icon
         className={`fill-current text-${color} hover:text-green`}

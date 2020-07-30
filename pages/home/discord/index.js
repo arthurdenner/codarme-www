@@ -12,18 +12,16 @@ const Info = () => (
       rola muita coisa boa lá e todos evoluem juntos!
     </p>
     <div className="flex flex-col md:flex-row md:justify-center">
-      <a
-        href={'https://discord.gg/9DEWaJh'}
-        target="_blank"
-        className="flex flex-1"
+      <Button
+        bg="bg-white flex-1 text-black mb-6 md:mr-6 md:mb-0 text-center"
+        onClick={() => {
+          fbq('track', 'Lead.Discord')
+          window.open('https://discord.gg/9DEWaJh')
+        }}
       >
-        <Button
-          bg="bg-white flex-1 text-black mb-6 md:mr-6 md:mb-0 text-center"
-          onClick={() => fbq('track', 'Lead.Discord')}
-        >
-          Acessar a comunidade
-        </Button>
-      </a>
+        Acessar a comunidade
+      </Button>
+
       <div className="flex items-center justify-center">
         <DiscordLogo height={36} width={146} />
       </div>

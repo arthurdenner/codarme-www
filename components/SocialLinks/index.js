@@ -11,31 +11,31 @@ export const SocialLinks = () => (
       as={Telegram}
       name="Telegram"
       href="http://t.me/codarme"
-      shouldTrackEvent
+      trackID="Lead.Telegram"
     />
     <Link
       as={Youtube}
       name="Youtube"
       href="http://youtube.com/codarme"
-      shouldTrackEvent
+      trackID="Lead.Youtube"
     />
     <Link
       as={Insta}
       name="Instagram"
       href="http://instagram.com/codar.me"
-      shouldTrackEvent
+      trackID="Lead.Instagram"
     />
     <Link
       as={Fb}
       name="Facebook"
       href="http://facebook.com/codarme"
-      shouldTrackEvent
+      trackID="Lead.Facebook"
     />
     <Link
       as={Github}
       name="Github"
       href="http://github.com/codarme"
-      shouldTrackEvent
+      trackID="Lead.Github"
     />
   </div>
 )
