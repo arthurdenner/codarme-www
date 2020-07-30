@@ -5,6 +5,9 @@ import { useFormik } from 'formik'
 import { Topbar } from '~/components/Topbar'
 import { Button } from '~/components/Button'
 import { Input } from '~/components/Input'
+import { Footer } from '~/components/Footer'
+import { About } from './about'
+import { Discord } from './discord'
 
 import Congratulation from './congratulation.svg'
 import Email from './email.svg'
@@ -123,5 +126,12 @@ const Hero = () => (
 )
 
 export default function Home() {
-  return <Hero />
+  return (
+    <>
+      <Hero />
+      <About />
+      <Discord />
+      <Footer />
+    </>
+  )
 }
