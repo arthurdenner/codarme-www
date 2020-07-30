@@ -4,7 +4,7 @@ module.exports = {
       colors: {
         lightGray: '#d6d6d6',
         gray: '#9D9FAA',
-        silver: '#CBCBCB',
+        silver: '#EEEEEE',
         jungle: '#1a1d28',
         gunmetal: '#2e3142',
         gunmetalDark: '#262937',
