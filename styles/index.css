@@ -9,15 +9,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-html,
-body {
-  @apply h-screen;
-}
-
-#__next {
-  @apply h-screen flex flex-col;
-}
-
 input,
 button {
   outline: none;
