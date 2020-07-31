@@ -29,7 +29,7 @@ const Info = () => (
   </div>
 )
 
-export const Discord = () => {
+const Discord = () => {
   return (
     <section className="bg-gunmetalDark flex flex-1 flex-col">
       <div
@@ -42,3 +42,5 @@ export const Discord = () => {
     </section>
   )
 }
+
+export default Discord

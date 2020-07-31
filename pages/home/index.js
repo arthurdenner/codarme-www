@@ -1,7 +1,7 @@
 import { Footer } from '~/components/Footer'
-import { About } from './about'
-import { Discord } from './discord'
-import { Hero } from './hero'
+import About from './about'
+import Discord from './discord'
+import Hero from './hero'
 
 export default function Home() {
   return (

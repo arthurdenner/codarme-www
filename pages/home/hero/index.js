@@ -112,7 +112,7 @@ const Jumbotron = () => {
   )
 }
 
-export const Hero = () => (
+const Hero = () => (
   <div
     className="bg-cover flex flex-1 flex-col"
     style={{ backgroundImage: 'url(/img/bg-hero.png)' }}
@@ -121,3 +121,5 @@ export const Hero = () => (
     <Jumbotron />
   </div>
 )
+
+export default Hero

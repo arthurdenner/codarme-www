@@ -57,7 +57,7 @@ const Info = () => (
   </div>
 )
 
-export const About = () => {
+const About = () => {
   return (
     <section className="bg-gunmetal flex flex-1 flex-col">
       <div className="max-w-5xl container p-2 flex-1 flex flex-col-reverse justify-center md:flex-row md:items-center md:p-4 lg:p-10">
@@ -72,3 +72,5 @@ export const About = () => {
     </section>
   )
 }
+
+export default About
