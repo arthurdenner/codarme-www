@@ -59,7 +59,7 @@ const Jumbotron = () => {
 
 const Telegram = () => (
   <div
-    className="bg-cover flex flex-1 flex-col"
+    className="bg-cover flex flex-1 flex-col h-screen"
     style={{ backgroundImage: 'url(/img/bg-hero.png)' }}
   >
     <div className="justify-center max-w-5xl container p-2 md:p-8 flex  sm:justify-start">
