@@ -2,9 +2,10 @@ import { Logo } from '~/components/Logo'
 import { SocialLinks } from '~/components/SocialLinks'
 import { cards } from './cards'
 
-const Card = ({ text, href, event }) => {
+const Card = ({ title, destination, slug }) => {
   const handleClick = () => {
-    window.open(href)
+    fbq('track', destination, { title, destination, slug })
+    window.open(destination)
   }
 
   return (
@@ -12,7 +13,7 @@ const Card = ({ text, href, event }) => {
       className="border-2 text-white mt-6 rounded-md p-4 text-center bg-gunmetal border-gray cursor-pointer hover:bg-green hover:font-bold transition duration-500 ease-in-out"
       onClick={handleClick}
     >
-      <p>{text}</p>
+      <p>{title}</p>
     </div>
   )
 }
@@ -31,7 +32,7 @@ const Links = () => (
       </div>
       <div>
         {cards.map(card => (
-          <Card key={card.text} {...card} />
+          <Card key={card.slug} {...card} />
         ))}
       </div>
     </div>
