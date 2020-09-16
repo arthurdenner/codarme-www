@@ -1,6 +1,6 @@
 import { Logo } from '~/components/Logo'
 import { SocialLinks } from '~/components/SocialLinks'
-import { cards } from './cards'
+import { cards } from '~/utils/cards'
 
 const Card = ({ title, destination, slug }) => {
   const handleClick = () => {
