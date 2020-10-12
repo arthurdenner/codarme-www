@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Link do nosso Curso na Udemy!",
+    "destination": "https://bit.ly/3fUk2rt",
+    "slug": "curso-udemy"
+  },
+  {
+    "title": "Nosso canal do Telegram!!!",
+    "destination": "http: //t.me/codarme",
+    "slug": "canal-telegram"
+  },
+  {
+    "title": "Entre pra nossa comunidade e evolua junto!",
+    "destination": "https://discord.gg/HCgbhQb",
+    "slug": "discord"
+  },
+  {
+    "title": "US$ 100 DOLARES em créditos para hospedar seu site/app/sistema",
+    "destination": "https://bit.ly/codarme-do",
+    "slug": "creditos-hospedagem"
+  },
+  {
+    "title": "Hospedagem em node no Brasil",
+    "destination": "https://bit.ly/codarme-umbler",
+    "slug": "umbler-hospedagem"
+  },
+  {
+    "title": "[Post] 5 coisas que aprendi com a minha primeira startup, mas que ainda são dicas valiosas",
+    "destination": "https://bit.ly/3fUk2rt",
+    "slug": "post-5coisas-startup"
+  },
+  {
+    "title": "[github] @brunobertolini",
+    "destination": "https://github.com/brunobertolini",
+    "slug": "github-bruno"
+  }
+]
