@@ -24,7 +24,7 @@ const Links = () => (
     className="bg-cover flex flex-1 flex-col h-screen py-4"
     style={{ backgroundImage: 'url(/img/bg-hero.png)' }}
   >
-    <div className="flex overflow-scroll px-4">
+    <div className="flex px-4 overflow-auto">
       <div className="container max-w-xl">
         <div className="flex flex-col items-center">
           <Logo color="#fff" width={220} />
