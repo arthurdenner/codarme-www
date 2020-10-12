@@ -1,13 +1,13 @@
 [
   {
-    "title": "Link do nosso Curso na Udemy!",
-    "destination": "https://bit.ly/3fUk2rt",
-    "slug": "curso-udemy"
-  },
-  {
     "title": "Nosso canal do Telegram!!!",
     "destination": "http: //t.me/codarme",
     "slug": "canal-telegram"
+  },
+  {
+    "title": "Link do nosso Curso na Udemy!",
+    "destination": "https://bit.ly/3fUk2rt",
+    "slug": "curso-udemy"
   },
   {
     "title": "Entre pra nossa comunidade e evolua junto!",
