@@ -10,13 +10,21 @@ import Congratulation from './congratulation.svg'
 import Email from './email.svg'
 
 const Presentation = () => (
-  <div className="p-3 text-lightGray md:flex-1">
-    <h1 className="p-1 text-3xl md:text-4xl lg:text-5xl">
-      Desenvolvendo software de <span className="text-green">verdade</span>
-    </h1>
-    <p className="p-1 leading-loose xl:text-1xl">
-      Seja avisado das próximas turmas do curso de Full Stack mais completo e
-      com quem tem experiência.
+  <div className="p-2 text-white md:flex-1">
+    <p className="xl:text-1xl">
+    Então vem com a gente nessa caminhada e não perca esse webinário.
+    </p>
+    <p className="mt-2 xl:text-1xl">
+    Vamos te ensinar a desenvolver do zero uma ferramenta para agendamentos, mas calma… não é apenas uma "ferramenta para agendamentos”, nesse simples desenvolvimento vamos te ensinar todos os pontos principais para você criar do zero qualquer coisa que você queira e muito mais.
+    </p>
+    <p className="mt-4 font-bold" style={{fontSize: 18}}>
+    Vai ficar de fora dessa, ou vai embarcar nessa para alcançar seus objetivos profissionais e tirar seus projetos do papel?
+    </p>
+    <p className="mt-2 xl:text-1xl">
+    Se inscreve aqui no nosso webinário e fica ligado nos e-mails, porque vem muita coisa boa por ai ;\) te avisamos por lá as datas e horários!
+    </p>
+    <p className="mt-2 xl:text-1xl font-bold">
+    Ao infinito e além!!!
     </p>
   </div>
 )
@@ -50,7 +58,7 @@ const Form = ({ onSuccess }) => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="p-4 text-white flex flex-col md:flex-1 md:max-w-sm"
+      className="p-3 text-white flex flex-col md:flex-1 w-full md:max-w-sm md:ml-4"
     >
       <Input
         type="text"
@@ -101,20 +109,26 @@ const Jumbotron = () => {
   const [formSubmitted, setSubmitted] = React.useState(false)
 
   return (
-    <div className="max-w-5xl container p-2 flex-1 flex flex-col justify-center md:flex-row md:items-center md:p-4 lg:p-10">
+    <div className="max-w-5xl container p-2 flex-1  text-white lg:p-10">
+       <h1 className="p-1 text-3xl md:text-4xl lg:text-5xl mb-6">
+      Quer <span className="text-green">evoluir</span> na sua carreira como desenvolvedor e ganhar mais dinheiro?
+    </h1>
+    <div className="flex flex-col md:flex-row items-start justify-center"> 
       <Presentation />
+
       {formSubmitted ? (
         <Congratulations />
       ) : (
         <Form onSuccess={() => setSubmitted(true)} />
       )}
     </div>
+    </div>
   )
 }
 
 const Hero = () => (
   <div
-    className="bg-cover flex flex-1 flex-col"
+    className="bg-cover flex flex-1 flex-col h-full"
     style={{ backgroundImage: 'url(/img/bg-hero.png)' }}
   >
     <Topbar />
