@@ -1,7 +1,7 @@
 import sendpulse from 'sendpulse-api'
 
 export default (req, res) => {
-  const { name, email } = req.body
+  const { name, email, sendPulseID } = req.body
 
   if (!email || !name || !email.trim() || !name.trim()) {
     res.statusCode = 400
@@ -25,7 +25,7 @@ export default (req, res) => {
     process.env.SENDPULSE_KEY,
     process.env.SENDPULSE_SECRET,
     '/tmp/',
-    (token) =>
-      sendpulse.addEmails(onAddSuccess, process.env.SENDPULSE_LIST_ID, options)
+    () =>
+      sendpulse.addEmails(onAddSuccess, sendPulseID, options)
   )
 }
