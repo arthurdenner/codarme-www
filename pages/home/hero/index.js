@@ -11,21 +11,19 @@ import Email from './email.svg'
 
 const Presentation = () => (
   <div className="p-2 text-white md:flex-1">
-    <p className="xl:text-1xl">
-    Então vem com a gente nessa caminhada e não perca esse webinário.
+   <p className="mt-4 font-bold" style={{fontSize: 18}}>
+    Então vem com a gente nesse webinário.
     </p>
     <p className="mt-2 xl:text-1xl">
-    Vamos te ensinar a desenvolver do zero uma ferramenta para agendamentos, mas calma… não é apenas uma "ferramenta para agendamentos”, nesse simples desenvolvimento vamos te ensinar todos os pontos principais para você criar do zero qualquer coisa que você queira e muito mais.
-    </p>
-    <p className="mt-4 font-bold" style={{fontSize: 18}}>
-    Vai ficar de fora dessa, ou vai embarcar nessa para alcançar seus objetivos profissionais e tirar seus projetos do papel?
+    Vamos te mostrar como criar uma aplicação completa, front, back e banco de dados, e o melhor: sem gastar nada!
     </p>
     <p className="mt-2 xl:text-1xl">
-    Se inscreve aqui no nosso webinário e fica ligado nos e-mails, porque vem muita coisa boa por ai ;\) te avisamos por lá as datas e horários!
+    Se inscreve pra esse webinário incrível que vai abrir sua mente, e fica ligado no seu e-mail, pois vem muita coisa boa por ai e vamos avisar das datas e horários por lá.
     </p>
-    <p className="mt-2 xl:text-1xl font-bold">
+    <p className="mt-6 xl:text-1xl font-bold">
     Ao infinito e além!!!
     </p>
+   
   </div>
 )
 
@@ -58,7 +56,7 @@ const Form = ({ onSuccess }) => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="p-3 text-white flex flex-col md:flex-1 w-full md:max-w-sm md:ml-4"
+      className="p-3 text-white flex flex-col md:flex-1 w-full md:max-w-sm md:ml-4 mt-4"
     >
       <Input
         type="text"
@@ -110,8 +108,8 @@ const Jumbotron = () => {
 
   return (
     <div className="max-w-5xl container p-2 flex-1  text-white lg:p-10">
-       <h1 className="p-1 text-3xl md:text-4xl lg:text-5xl mb-6">
-      Quer <span className="text-green">evoluir</span> na sua carreira como desenvolvedor e ganhar mais dinheiro?
+       <h1 className="p-1 text-2xl md:text-4xl lg:text-5xl mb-6">
+       Quer <span className="text-green">evoluir</span> como dev ou  <span className="text-green">desenvolver</span> aquela sua aplicação que não sai do papel?
     </h1>
     <div className="flex flex-col md:flex-row items-start justify-center"> 
       <Presentation />
@@ -122,6 +120,7 @@ const Jumbotron = () => {
         <Form onSuccess={() => setSubmitted(true)} />
       )}
     </div>
+   
     </div>
   )
 }
