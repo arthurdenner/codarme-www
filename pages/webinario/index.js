@@ -31,7 +31,7 @@ const Presentation = () => (
 const Webinario = () => {
   return (
     <div className="h-full md:h-screen">
-      <Hero presentation={Presentation} title={Title} sendPulseID="1148508"/>
+      <Hero presentation={Presentation} title={Title} sendPulseType="webinario"/>
     </div>
   )
 }

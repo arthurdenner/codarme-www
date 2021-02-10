@@ -14,7 +14,7 @@ const Presentation = () => (
 )
 
 const Hero = () => (
-  <HeroComponent presentation={Presentation} sendPulseID={process.env.SENDPULSE_LIST_ID} />
+  <HeroComponent presentation={Presentation} sendPulseType="home" />
 )
 
 export default Hero

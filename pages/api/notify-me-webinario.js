@@ -26,6 +26,6 @@ export default (req, res) => {
     process.env.SENDPULSE_SECRET,
     '/tmp/',
     () =>
-      sendpulse.addEmails(onAddSuccess, process.env.SENDPULSE_LIST_ID, options)
+      sendpulse.addEmails(onAddSuccess, '1148508', options)
   )
 }
