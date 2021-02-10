@@ -4,8 +4,7 @@ import { Topbar } from '~/components/Topbar'
 import { Congratulations } from '~/components/Congratulations'
 import { Form } from '~/components/Form'
 
-
-const Jumbotron = ({ title, presentation, sendPulseID } ) => {
+const Jumbotron = ({ title, presentation, sendPulseType } ) => {
   const [formSubmitted, setSubmitted] = React.useState(false)
 
   return (
@@ -19,7 +18,7 @@ const Jumbotron = ({ title, presentation, sendPulseID } ) => {
       {formSubmitted ? (
         <Congratulations />
       ) : (
-        <Form onSuccess={() => setSubmitted(true)} sendPulseID={sendPulseID} />
+        <Form onSuccess={() => setSubmitted(true)} sendPulseType={sendPulseType} />
       )}
     </div>
    
@@ -27,13 +26,13 @@ const Jumbotron = ({ title, presentation, sendPulseID } ) => {
   )
 }
 
-export const Hero = ({ title, presentation, sendPulseID }) => (
+export const Hero = ({ title, presentation, sendPulseType }) => (
   <div
     className="bg-cover flex flex-1 flex-col h-full"
     style={{ backgroundImage: 'url(/img/bg-hero.png)' }}
   >
     <Topbar  />
-    <Jumbotron presentation={presentation} sendPulseID={sendPulseID} title={title}/>
+    <Jumbotron presentation={presentation} sendPulseType={sendPulseType} title={title}/>
   </div>
 )
 

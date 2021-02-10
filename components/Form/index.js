@@ -5,10 +5,16 @@ import { useFormik } from 'formik'
 import { Button } from '~/components/Button'
 import { Input } from '~/components/Input'
 
-export const Form = ({ onSuccess, sendPulseID }) => {
+const sendPulseTypes = {
+  webinario: 'notify-me-webinario',
+  home: 'notify-me'
+}
+
+
+export const Form = ({ onSuccess, sendPulseType }) => {
   const onSubmit = async values => {
     try {
-      await axios.post('/api/notify-me', {...values, sendPulseID })
+      await axios.post(`/api/${sendPulseTypes[sendPulseType]}`, values)
       fbq('track', 'Lead', values)
       onSuccess()
     } catch (error) {
