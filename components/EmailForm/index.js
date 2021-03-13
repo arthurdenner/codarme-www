@@ -6,12 +6,13 @@ import { Button } from '~/components/Button'
 import { Input } from '~/components/Input'
 
 const sendPulseTypes = {
+  email: 'notify-me-email',
   webinario: 'notify-me-webinario',
   home: 'notify-me'
 }
 
 
-export const Form = ({ onSuccess, sendPulseType }) => {
+export const EmailForm = ({ onSuccess, sendPulseType }) => {
   const onSubmit = async values => {
     try {
       await axios.post(`/api/${sendPulseTypes[sendPulseType]}`, values)
@@ -25,7 +26,6 @@ export const Form = ({ onSuccess, sendPulseType }) => {
   const formik = useFormik({
     onSubmit,
     validationSchema: yup.object().shape({
-      name: yup.string().required('Esqueceu de dizer seu nome :D'),
       email: yup
         .string()
         .required('Sem e-mail, não consigo te enviar as novidades, hehe')
@@ -40,33 +40,27 @@ export const Form = ({ onSuccess, sendPulseType }) => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="p-3 text-white flex flex-col md:flex-1 w-full md:max-w-sm md:ml-4 mt-4"
+      className="flex flex-col md:flex-row md:items-end items-center p-4 md:p-0 w-full md:w-2/4"
     >
-      <div className="mb-4">
-      <Input
-        type="text"
-        name="name"
-        placeholder="Digite seu nome"
-        value={formik.values.name}
-        error={formik.touched.name && formik.errors.name}
-        onChange={formik.setFieldValue}
-        disabled={formik.isSubmitting}
-      />
+      <div className="md:mr-4 w-full">
+        <p className="text-white mb-4 text-center md:text-left">Nao perca a próxima aula!</p>
+        <Input
+          type="text"
+          name="email"
+          placeholder="Digite seu melhor e-mail"
+          value={formik.values.email}
+          error={formik.touched.email && formik.errors.email}
+          onChange={formik.setFieldValue}
+          disabled={formik.isSubmitting}
+        />
       </div>
-      <div className="mb-4">
-      <Input
-        type="text"
-        name="email"
-        placeholder="Informe seu melhor e-mail"
-        value={formik.values.email}
-        error={formik.touched.email && formik.errors.email}
-        onChange={formik.setFieldValue}
-        disabled={formik.isSubmitting}
-      />
-      </div>
+      <div className="mt-4 w-full md:w-2/4">
       <Button type="submit" disabled={formik.isSubmitting}>
+        <p className="text-white font-bold">
         {(formik.isSubmitting && 'Deixa eu anotar aqui...') || 'Me avise!'}
+        </p>
       </Button>
+      </div>
     </form>
   )
 }

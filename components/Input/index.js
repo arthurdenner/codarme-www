@@ -5,11 +5,11 @@ export const Input = ({ error, onChange, ...props }) => {
   )
 
   return (
-    <div className="mb-3 md:mb-4">
+    <div className="w-full">
       <input
         {...props}
         onChange={handleChange}
-        className={`p-4 bg-gunmetal opacity-50 border-2 border-transparent rounded-md md:p-4 w-full ${
+        className={`p-4 bg-gunmetal text-white opacity-50 border-2 border-transparent rounded-md md:p-4 w-full ${
           error && 'shake border-red'
         }`}
       />
