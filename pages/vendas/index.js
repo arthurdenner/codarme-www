@@ -1,6 +1,6 @@
-import { Header } from './components/Header'
+import { Header } from '~/components/Vendas/components/Header'
 import { Logo } from '~/components/Logo'
-import { AboutBruno, Bonus, Hero, Stack, Reviews, Subject, Topics, Garantia, Faq,  } from './sections'
+import { AboutBruno, Bonus, Hero, Stack, Reviews, Subject, Topics, Garantia, Faq,  } from '~/components/Vendas/sections'
 
 
 const Vendas = () => {
