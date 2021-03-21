@@ -18,9 +18,9 @@ const CardSubject = ({ icon, text }) => (
 )
 
 export const Subject = () => (
-  <section className="mt-20">
-    <h2 className="text-white text-4xl text-center mb-16">Tópicos <span className="text-green">principais</span></h2>
-    <div className="grid grid-cols-2 gap-6">
+  <section className="mt-32">
+    <h2 className="text-white text-4xl text-center mb-32">Tópicos <span className="text-green">principais</span></h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <CardSubject number="01" icon={IconStack1}/>
       <CardSubject number="02" icon={IconStack2}/>
       <CardSubject number="03" icon={IconStack3}/>

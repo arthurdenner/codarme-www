@@ -1,15 +1,16 @@
 import { Header } from './components/Header'
-import { AboutBruno, Bonus, Hero, Stack, Reviews, Subject, Topics} from './sections'
+import { Logo } from '~/components/Logo'
+import { AboutBruno, Bonus, Hero, Stack, Reviews, Subject, Topics, Garantia, Faq,  } from './sections'
 
 
-const Webinario = () => {
+const Vendas = () => {
   return (
     <>
     <div
       className="bg-cover flex flex-1 flex-col h-full bg-darkGreen"
       style={{ backgroundImage: 'url(/img/bg-sales.png)' }}
     >
-      <div className="container">
+      <div className="container p-4">
         <Header />
         <Hero />
         <Topics />
@@ -21,15 +22,35 @@ const Webinario = () => {
       className="bg-cover flex flex-1 flex-col h-full bg-darkGreen"
       style={{ backgroundImage: 'url(/img/bg-sales2.png)' }}
     >
-      <div className="container">
+      <div className="container p-4">
         <Stack />
         <AboutBruno />
         <Reviews />
         <Bonus />
       </div>
     </div>
+    <div
+      className="bg-cover flex flex-1 flex-col h-full"
+      style={{backgroundColor: '#141F23'}}
+    >
+      <div className="container p-4">
+        <Garantia />
+      </div>
+    </div>
+    <div
+      className="flex flex-1 flex-col h-full bg-darkGreen"
+    >
+      <div className="container p-4">
+        <Faq />
+      </div>
+    </div>
+    <footer className="flex items-center justify-center w-full bg-darkGreen">
+      <div className="mb-16 p-4">
+      <Logo color="white" width={300}/>
+      </div>
+    </footer>
     </>
   )
 }
 
-export default Webinario
+export default Vendas

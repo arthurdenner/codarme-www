@@ -20,9 +20,9 @@ const CardBonus = ({ icon, text }) => (
 )
 
 export const Bonus = () => (
-  <section className="mt-20">
-    <h2 className="text-white text-4xl text-center mb-16">Bônus <span className="text-green">exclusivo</span> para esta turma</h2>
-    <div className="grid grid-cols-2 gap-12">
+  <section className="mt-32">
+    <h2 className="text-white text-4xl text-center mb-24">Bônus <span className="text-green">exclusivo</span> para esta turma</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-48">
       <CardBonus number="01" icon={IconBonus1} />
       <CardBonus number="02" icon={IconBonus2}/>
       <CardBonus number="03" icon={IconBonus3}/>

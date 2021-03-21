@@ -16,9 +16,9 @@ const CardStack = ({ icon, text }) => (
 )
 
 export const Stack = () => (
-  <section className="mt-20">
-    <h2 className="text-white text-4xl text-center mb-16">Como iremos <span className="text-green">construir</span> tudo isso?</h2>
-    <div className="grid grid-cols-4 gap-6">
+  <section className="mt-32">
+    <h2 className="text-white text-4xl text-center mb-32">Como iremos <span className="text-green">construir</span> tudo isso?</h2>
+    <div className="grid grid-cols-1 md:grid-cols-4  gap-6">
       <CardStack number="01" icon={JsIcon}/>
       <CardStack number="02" icon={NodeIcon}/>
       <CardStack number="03" icon={ReactIcon}/>

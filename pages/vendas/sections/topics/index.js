@@ -10,9 +10,9 @@ const Card = ({ number, text }) => (
 )
 
 export const Topics = () => (
-  <section className="mt-20">
-    <h2 className="text-white text-4xl text-center mb-16">O que iremos <span className="text-green">desenvolver</span>?</h2>
-    <div className="grid grid-cols-4 gap-6">
+  <section className="mt-32">
+    <h2 className="text-white text-4xl text-center mb-32">O que iremos <span className="text-green">desenvolver</span>?</h2>
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-12 p-16 md:p-0">
       <Card number="01" />
       <Card number="02" />
       <Card number="03" />

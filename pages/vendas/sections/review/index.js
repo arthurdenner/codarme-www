@@ -27,9 +27,9 @@ const CardReviewText = ({ icon, text }) => (
 
 
 export const Reviews = () => (
-  <section className="mt-20">
-    <h2 className="text-white text-4xl text-center mb-16">Relatos <span className="text-green">de quem conhece</span> nosso trabalho</h2>
-    <div className="grid grid-cols-3 gap-6">
+  <section className="mt-32">
+    <h2 className="text-white text-4xl text-center mb-24">Relatos <span className="text-green">de quem conhece</span> nosso trabalho</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       <CardReview number="01" />
       <CardReview number="02"/>
       <CardReview number="03" />
@@ -37,7 +37,7 @@ export const Reviews = () => (
       <CardReview number="01" />
       <CardReview number="02"/>
     </div>
-    <div className="mt-24 grid grid-cols-3 gap-6">
+    <div className="mt-32 grid grid-cols-1 md:grid-cols-3 gap-6">
       <CardReviewText number="01" />
       <CardReviewText number="02"/>
       <CardReviewText number="03" />

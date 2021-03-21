@@ -4,9 +4,9 @@ import { SocialLinks } from '~/components/SocialLinks'
 
 
 export const AboutBruno = () => (
-  <section className="mt-20">
-    <h2 className="text-white text-4xl text-center mb-16">Seja guidado por quem já tem <span className="text-green">muita experiência</span>!</h2>
-    <div className="flex items-center">
+  <section className="mt-32">
+    <h2 className="text-white text-4xl text-center mb-24">Seja guidado por quem já tem <span className="text-green">muita experiência</span>!</h2>
+    <div className="flex flex-col md:flex-row items-center">
       <div className="w-md">
         <img src="/img/bruno-photo.png" />
       </div>
