@@ -1,28 +1,19 @@
 export const questions = [{
-  question: 'O que é o curso?',
-  answer: '"O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?',
+  question: 'Quais os métodos de pagamento?',
+  answer: 'A plataforma aceita como pagamento cartão de débito, crédito (com ou sem parcelamento) e boleto!',
 },{
-  question: 'O que é o curso?',
-  answer: '"O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?',
+  question: 'Quais são os pré-requisitos do curso?',
+  answer: 'O único pré-requisito do curso é a vontade de aprender, você pode não saber nada de programação, vamos te ensinar!',
 },{
-  question: 'O que é o curso?',
-  answer: '"O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?',
+  question: 'Por quanto tempo terei acesso?',
+  answer: 'O acesso do curso é vitalício, além de que, você receberá todas as atualizações feitas e novos materiais!',
 },{
-  question: 'O que é o curso?',
-  answer: '"O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?',
+  question: 'Vou receber algum certificado?',
+  answer: 'Não oferecemos nenhum certificado atualmente.',
 },{
-  question: 'O que é o curso?',
-  answer: '"O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?',
+  question: 'Qual o prazo de garantia do curso?',
+  answer: 'São 30 dias de garantia incondicional, a qual pode se requisitada a qualquer momento na plataforma Hotmart. Seu dinheiro de volta, sem incomodação!',
 },{
-  question: 'O que é o curso?',
-  answer: '"O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?',
-},{
-  question: 'O que é o curso?',
-  answer: '"O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?',
-},{
-  question: 'O que é o curso?',
-  answer: '"O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?',
-},{
-  question: 'O que é o curso?',
-  answer: '"O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?',
+  question: 'Como recebo meu acesso?',
+  answer: '"Ao efetuar a compra e o pagamento ser aprovado, você receberá um email com as instruções para o seu acesso ao curso.',
 }]
