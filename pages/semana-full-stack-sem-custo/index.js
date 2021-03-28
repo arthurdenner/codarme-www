@@ -1,7 +1,3 @@
-
-import { Step } from '~/components/Step'
-import { Header } from '~/components/Header'
-
 const Week = () => (
  <></>
 )

@@ -1,6 +1,7 @@
 
 import { Step } from '~/components/Step'
 import { Header } from '~/components/Header'
+import { YoutubeEmbed } from '~/components/YoutubeEmbed'
 import Router from 'next/router'
 
 
@@ -11,7 +12,7 @@ const Aula01 = () => (
   <div className="container">
     <Header />
     <div className="w-full mt-8 md:mt-24 p-4 md:p-0">
-      <iframe style={{borderRadius: 14}} width="100%" height="600px" src="https://www.youtube.com/embed/wYg5pfpnVhI" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+      <YoutubeEmbed embedId="wYg5pfpnVhI" />
       <div className="flex mt-8 md:mt-24 flex-wrap justify-center md:justify-start">
         <Step date="05/04" text="Aula 01" />
         <Step date="06/04" text="Aula 02" disable/>
