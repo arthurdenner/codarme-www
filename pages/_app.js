@@ -18,6 +18,7 @@ function App({ Component, pageProps }) {
     <>
       <Analytics />
       <Head>
+        <meta name="facebook-domain-verification" content="h9ju3drno78xt7xaca1500aowu3zrr" />
         <title>Codar.me - Desenvolvendo software de verdade</title>
       </Head>
       {!isProd && <Env />}
