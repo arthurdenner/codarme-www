@@ -9,14 +9,10 @@ const Aula05 = () => (
   >
     <div className="container">
       <Header />
-      <div className="w-full mt-8 md:mt-24 p-4 md:p-0">
+      <div className="w-full mt-8 md:mt-12 p-4 md:p-0">
       <YoutubeEmbed embedId="YGVhVnw4nJY" />
-        <div className="flex mt-8 md:mt-24 flex-wrap justify-center md:justify-start">
-          <Step date="05/04" text="Aula 01"/>
-          <Step date="06/04" text="Aula 02" />
-          <Step date="07/04" text="Aula 03" />
-          <Step date="08/04" text="Aula 04" />
-          <Step date="09/04" text="Aula 05" />
+        <div className="flex mt-8 md:mt-12 flex-wrap justify-center md:justify-start">
+          <Step isAvailable={['aula-01', 'aula-02', 'aula-03', 'aula-05']}/>
         </div>
       </div>
     </div>
@@ -24,7 +20,7 @@ const Aula05 = () => (
 )
 
 Aula05.getInitialProps = ({ res }) => {
-  if(!process.env.AULA_05) {
+  if(!process.env.NEXT_PUBLIC_AULA_05) {
     if (res) { 
       res.writeHead(302, {
       Location: '/semana-full-stack-sem-custo'
