@@ -42,7 +42,7 @@ export const EmailForm = ({ onSuccess, sendPulseType }) => {
       onSubmit={formik.handleSubmit}
       className="flex flex-col md:flex-row md:items-end md:justify-end items-center p-4 md:p-0 w-full md:w-2/4"
     >
-      <div className="md:mr-4 w-full md:w-2/4">
+      <div className="md:mr-4 w-full md:w-64">
         <p className="text-white mb-4 text-center md:text-left">Nao perca a próxima aula!</p>
         <Input
           type="text"
@@ -54,7 +54,7 @@ export const EmailForm = ({ onSuccess, sendPulseType }) => {
           disabled={formik.isSubmitting}
         />
       </div>
-      <div className="mt-4 w-full md:w-1/4">
+      <div className="mt-4 w-full md:w-32">
       <Button type="submit" disabled={formik.isSubmitting}>
         <p className="text-white font-bold">
         {(formik.isSubmitting && 'Deixa eu anotar aqui...') || 'Me avise!'}
