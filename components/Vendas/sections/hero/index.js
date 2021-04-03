@@ -9,9 +9,11 @@ export const Hero = () => (
       
       <div className="mt-12 flex justify-center hidden md:block">
         <div className="w-9/12 md:w-8/12">
+          <a href="https://pay.hotmart.com/A49443038S" target="_blank">
           <Button>
             Garantir minha vaga
           </Button>
+          </a>
         </div>
       </div>
 
@@ -22,9 +24,11 @@ export const Hero = () => (
     </div>
     <div className="mt-12 flex justify-center block md:hidden">
         <div className="w-10/12 md:w-8/12">
+        <a href="https://pay.hotmart.com/A49443038S" target="_blank">
           <Button>
             Garantir minha vaga
           </Button>
+          </a>
         </div>
     </div>
    
