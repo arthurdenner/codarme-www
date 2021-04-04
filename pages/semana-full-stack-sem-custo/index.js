@@ -3,10 +3,10 @@ const Week = () => (
 )
 
 Week.getInitialProps = ({ res }) => {
-  const { AULA_05, AULA_04, AULA_03, AULA_02, AULA_01 } = process.env
+  const { NEXT_PUBLIC_AULA_01, NEXT_PUBLIC_AULA_02, NEXT_PUBLIC_AULA_03, NEXT_PUBLIC_AULA_04, NEXT_PUBLIC_AULA_05 } = process.env
 
 
-  const availableClasses = [AULA_01, AULA_02, AULA_03, AULA_04, AULA_05];
+  const availableClasses = [NEXT_PUBLIC_AULA_01, NEXT_PUBLIC_AULA_02, NEXT_PUBLIC_AULA_03, NEXT_PUBLIC_AULA_04, NEXT_PUBLIC_AULA_05];
 
 
   const lastAvailableClass = availableClasses.slice().reverse().find(aula => aula !== undefined);

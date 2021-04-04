@@ -25,12 +25,14 @@ export const Step = ({ isAvailable }) => {
 
 
   return (
-    aulas.map(({ available, name, day }, index) => (
+    aulas.map(({ available, name, day,isVideoAvailable }, index) => (
       <div className="flex items-center mb-4" key={day} >
         <div className={contentClass(available)} onClick={() => available && redirectTo(available)}>
           <p>{day}</p>
           <p className="font-bold text-xl" >{name}</p>
-          <Badge isAvailable={isAvailable} index={index} />
+          {isVideoAvailable && (
+            <Badge isAvailable={isAvailable} index={index} />
+          )}
         </div>
         {isLatest(index) && (
           <div className={lineClass(index, currentSlug, isAvailable)} disable={!available} />
