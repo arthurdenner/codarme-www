@@ -12,10 +12,10 @@ export const AboutBruno = () => (
       </div>
       <div className="text-white w-md ml-8 text-right">
         <p>
-        Bruno Bertolini é desenvolvedor web desde 2006. Criou sua primeira startup em 2010, ajudou a montar MVPs e foi sócio e CTO de diversas outras, como Cuco Helth e Intexfy. Fundou também duas empresas de desenvolvimento de softwares para teceiros, que atenderam grandes clientes como Grupo Kroton, Sebrae e Neoway.
+        Bruno Bertolini é desenvolvedor web desde 2006. Criou sua primeira startup em 2010, ajudou a montar MVPs e foi sócio e CTO de diversas outras, como Cuco Helth, Intexfy. Fundou também duas empresas de desenvolvimento de softwares para terceiros (software house), que atenderam grandes clientes como Grupo Kroton, Sebrae e Neoway.
         </p>
         <p className="mt-8 mb-8">
-        Foi Front-end Tech Lead na Neoway, Mobile Tech Lead na Juntos Somos Mais, desenvolveu sozinho uma plataforma de vistoria veícular, o Insper, que já fez dezenas de milhares de vistorias, e tem mais de  1,9 milhão de fotos tiradas pelo aplicativo, e atualmente é responsável pela área técnica da Setta.co
+        Foi Front-end Tech Lead na Neoway, Mobile Tech Lead na Juntos Somos Mais, desenvolveu sozinho uma plataforma de vistoria veicular, o Insper, que já fez dezenas de milhares de vistorias, e tem mais de 3 milhões de fotos tiradas pelo aplicativo. Atualmente é Head de Tecnologia na Setta.co, onde conseguiu guiar o time e liberar seu primeiro MPV, já nos primeiros dois meses.
        </p>
        <div className="flex justify-end">
         <SocialLinks color="white"/>

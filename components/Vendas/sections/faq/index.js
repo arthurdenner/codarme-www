@@ -23,9 +23,9 @@ const FaqCard = ({ question, answer }) => {
 export const Faq = () => (
   <section className="mt-20">
     <div className="text-white  text-center mb-16">
-    <h2 className="text-4xl mb-8">Não fiquem nenhuma<span className="text-green"> dúvida</span></h2>
+    <h2 className="text-4xl mb-8"> Não fique com nenhuma<span className="text-green"> dúvida</span></h2>
     <p>
-    Abaixo respondemos as perguntas mais frequentes sobre o curso. Caso você ainda tenha alguma dúvida, não deixe de entrar em contato com a gente em oi@codar.me
+      Abaixo respondemos as perguntas mais frequentes sobre o curso. Caso você ainda tenha alguma dúvida, não deixe de entrar em contato com a gente em oi@codar.me
     </p>
     </div>
     <div className="flex flex-col justify-center mt-24 mb-16">
