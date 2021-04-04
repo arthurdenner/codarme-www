@@ -2,13 +2,36 @@ import axios from 'axios'
 import * as yup from 'yup'
 import { useFormik } from 'formik'
 
-import { Button } from '~/components/Button'
-import { Input } from '~/components/Input'
-
 const sendPulseTypes = {
   email: 'notify-me-email',
   webinario: 'notify-me-webinario',
   home: 'notify-me'
+}
+
+export const Button = ({ bg = 'bg-green', ...props }) => (
+  <button
+    className={`p-2 rounded-md ${bg} ${props.disabled && 'opacity-50'} w-full border-2 border-transparent`}
+    {...props}
+  />
+)
+
+export const Input = ({ error, onChange, ...props }) => {
+  const handleChange = React.useCallback(
+    (ev) => onChange(props.name, ev.target.value),
+    [props.name]
+  )
+
+  return (
+    <div className="w-full">
+      <input
+        {...props}
+        onChange={handleChange}
+        className={`p-2 bg-gunmetal text-white opacity-50 border-2 border-transparent rounded-md md:p-2 w-full ${error && 'shake border-red'
+          }`}
+      />
+      {error && <div className="text-red text-sm p-1">{error}</div>}
+    </div>
+  )
 }
 
 
@@ -55,11 +78,11 @@ export const EmailForm = ({ onSuccess, sendPulseType }) => {
         />
       </div>
       <div className="mt-4 w-full md:w-32">
-      <Button type="submit" disabled={formik.isSubmitting}>
-        <p className="text-white font-bold">
-        {(formik.isSubmitting && 'Deixa eu anotar aqui...') || 'Me avise!'}
-        </p>
-      </Button>
+        <Button type="submit" disabled={formik.isSubmitting}>
+          <p className="text-white font-bold">
+            {(formik.isSubmitting && 'Deixa eu anotar aqui...') || 'Me avise!'}
+          </p>
+        </Button>
       </div>
     </form>
   )
