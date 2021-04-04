@@ -6,8 +6,5 @@ export const Header = () => (
     <div>
       <Logo />
     </div>
-    <div className="hidden md:block">
-      <SocialLinks color="white"/>
-    </div>
   </header>
 )
