@@ -1,7 +1,7 @@
-import { subDays } from 'date-fns'
+import { subHours } from 'date-fns'
 
 const isWeekAvaliable = () => new Date() < new Date('2021-04-12T00:00:00-03:00')
-const isPageAvaliable = date => new Date >= subDays(new Date(date), 1) && isWeekAvaliable()
+const isPageAvaliable = date => new Date >= subHours(new Date(date), 21) && isWeekAvaliable()
 const isVideoAvaliable = date => new Date() >= new Date(date)
 
 
