@@ -1,9 +1,8 @@
 import { subHours } from 'date-fns'
 
 const isWeekAvaliable = () => new Date() < new Date('2021-04-12T00:00:00-03:00')
-const isPageAvaliable = date => new Date >= subHours(new Date(date), 21) && isWeekAvaliable()
+const isPageAvaliable = date => new Date() >= subHours(new Date(date), 22) && isWeekAvaliable()
 const isVideoAvaliable = date => new Date() >= new Date(date)
-
 
 const classes = {
   0: '2021-04-05T15:00:00-03:00',
@@ -20,6 +19,3 @@ export const aulas = [
   { name: 'Aula 04', day: '08/04', slug: 'aula-04', available: isPageAvaliable(classes[3]), isVideoAvailable: isVideoAvaliable(classes[3]), current: false },
   { name: 'Aula 05', day: '09/04', slug: 'aula-05', available: isPageAvaliable(classes[4]), isVideoAvailable: isVideoAvaliable(classes[4]), current: false }
 ]
-
-
-
