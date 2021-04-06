@@ -1,3 +1,5 @@
+import {Subtitle} from '../../components/Subtitle'
+
 const Card = ({ number, text }) => (
   <div className="bg-green bg-opacity-25  p-8">
     <p className="text-green font-bold text-2xl">
@@ -10,8 +12,8 @@ const Card = ({ number, text }) => (
 )
 
 export const Topics = () => (
-  <section className="mt-32">
-    <h2 className="text-white text-4xl text-center mb-32">Por que escolher a <span className="text-green">Codar.me</span></h2>
+  <section className="mt-20">
+    <Subtitle>Por que escolher a <span className="text-green">Codar.me</span></Subtitle>
     <div className="grid grid-cols-1 md:grid-cols-4 gap-12 p-16 md:p-0">
       <Card number="01" text="Um curso totalmente focado na prática, desenvolvendo uma aplicação real, nada de copia e cola, nem de clone de serviços existentes." />
       <Card number="02" text="Muito mais que um curso sobre software. É uma experiência da rotina e dia a dia real de um desenvolvedor, aprendendo a tomar decisões em cada parte do processo." />

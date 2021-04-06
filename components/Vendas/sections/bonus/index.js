@@ -1,9 +1,10 @@
+import {Subtitle} from '../../components/Subtitle'
+
 import IconBonus1 from './bonusicon1.svg'
 import IconBonus2 from './bonusicon2.svg'
 import IconBonus3 from './bonusicon3.svg'
 import IconBonus4 from './bonusicon4.svg'
-import IconBonus5 from './bonusicon5.svg'
-import IconBonus6 from './bonusicon6.svg'
+
 
 const CardBonus = ({ icon, text, title }) => (
   <div className="flex mb-8 items-center">
@@ -20,8 +21,8 @@ const CardBonus = ({ icon, text, title }) => (
 )
 
 export const Bonus = () => (
-  <section className="mt-32">
-    <h2 className="text-white text-4xl text-center mb-24">Bônus <span className="text-green">exclusivos</span> para esta turma</h2>
+  <section className="mt-20">
+    <Subtitle>Bônus <span className="text-green">exclusivos</span> para esta turma</Subtitle>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-48">
       <CardBonus number="01" icon={IconBonus1} title="Curso Javascript" text="Você vai ganhar o minicurso de Javascript puro. Esse minicurso fala dos fundamentos do Javascript, e explica a base necessária, passando por diversas funcionalidades nativas, para que você entenda de verdade o que está rolando com a sua aplicação"/>
       <CardBonus number="02" icon={IconBonus2} title="Curso NodeJS" text="Novamente, vamos falar de fundamentos e de como as coisas funcionam. Aqui, você vai aprender a criar um servidor Node sem nenhum tipo de framework!"/>

@@ -4,11 +4,11 @@ import { SocialLinks } from '~/components/SocialLinks'
 export const Hero = () => (
   <section className="flex md:flex-row flex-col mt-16">
     <div className="w-xl">
-      <h1 className="text-white text-3xl md:text-4xl mt-0 md:mt-8 text-center md:text-left">Torne-se um desenvolvedor <span className="text-green">acima da média</span></h1>
+      <h1 className="text-white text-3xl md:text-5xl mt-0 md:mt-8 text-center md:text-left">Torne-se um desenvolvedor <span className="text-green">acima da média</span></h1>
       <p className="text-white mt-8 text-md md:text-xl">Aprenda a desenvolver software de verdade, de qualidade, com quem tem muita experiência prática, e torne-se um profissional acima da média e requisitado pelo mercado.</p>
       
       <div className="mt-12 flex justify-center hidden md:block">
-        <div className="w-9/12 md:w-8/12">
+        <div className="w-9/12 md:w-2/4">
          
           <Button>
             Garantir minha vaga

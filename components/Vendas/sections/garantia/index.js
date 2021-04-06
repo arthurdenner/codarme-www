@@ -7,8 +7,10 @@ const Price = () => (
         <p className="text-white mb-6">Investimento</p>
         <p className="text-white text-2xl line-through text-gray mb-4">R$ 1997,00</p>
         <p className="text-white font-bold text-4xl"><span className="font-normal text-2xl">12x </span>R$ 97,14</p>
-        <div className="mt-16 w-full mb-16">
-          <Button />
+        <div className="mt-16  flex items-center justify-center mb-16">
+          <div className="md:w-3/4">
+            <Button />
+          </div>
         </div>
         <div className="w-full">
           <img src="/img/cards.png" />
@@ -38,11 +40,16 @@ export const Garantia = () => (
         </div>
     </div>
     <div className="text-white text-center mb-16">
-    <p className="text-white mt-16 mb-32">Isso mesmo, <span className="font-bold">sem nenhuma condição</span>, se no primeiro mês você achar que o curso não é pra você, pode simplesmente <span className="font-bold">mandar um email</span> pedindo seu dinheiro de volta, <span className="font-bold">e nós te devolvemos</span>, simples assim!!</p>
-    <h2 className="text-4xl mb-16">Aprenda a desenvolver softaware de  <span className="text-green">verdade</span></h2>
-    <p>
+    <div className="flex items-center justify-center">
+      <p className="text-white mt-16 mb-32 md:w-2/3">Isso mesmo, <span className="font-bold">sem nenhuma condição</span>, se no primeiro mês você achar que o curso não é pra você, pode simplesmente <span className="font-bold">mandar um email</span> pedindo seu dinheiro de volta, <span className="font-bold">e nós te devolvemos</span>, simples assim!!</p>
+    </div>
+  
+    <h2 className="text-2xl md:text-4xl mb-16">Aprenda a desenvolver softaware de  <span className="text-green">verdade</span></h2>
+    <div className="flex items-center justify-center">
+    <p className="md:w-2/3">
       O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?
     </p>
+    </div>
     </div>
     <div className="flex justify-center mt-24 mb-16">
       <Price />

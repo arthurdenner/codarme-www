@@ -7,20 +7,19 @@ const Vendas = () => {
   return (
     <>
     <div
-      className="bg-cover flex flex-1 flex-col h-full bg-darkGreen"
+      className="bg-no-repeat flex flex-1 flex-col h-full bg-darkGreen"
       style={{ backgroundImage: 'url(/img/bg-sales.png)' }}
     >
       <div className="container p-4">
         <Header />
         <Hero />
-        <Topics />
         <Subject />
+        <Topics />
       </div>
      
     </div>
     <div
-      className="bg-cover flex flex-1 flex-col h-full bg-darkGreen"
-      style={{ backgroundImage: 'url(/img/bg-sales2.png)' }}
+      className="flex flex-1 flex-col h-full bg-darkGreen"
     >
       <div className="container p-4">
         <Stack />
@@ -45,8 +44,8 @@ const Vendas = () => {
       </div>
     </div>
     <footer className="flex items-center justify-center w-full bg-darkGreen">
-      <div className="mb-16 p-4">
-      <Logo color="white" width={300}/>
+      <div className="p-4">
+        <Logo color="white" width={200}/>
       </div>
     </footer>
     </>
