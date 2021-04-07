@@ -1,6 +1,6 @@
 export const questions = [{
   question: 'Quais os métodos de pagamento?',
-  answer: 'A plataforma aceita como pagamento cartão de débito, crédito (com ou sem parcelamento) e boleto!',
+  answer: 'A plataforma aceita como pagamento cartão de débito, crédito (com ou sem parcelamento), boleto e PIX!',
 },{
   question: 'Quais são os pré-requisitos do curso?',
   answer: 'Necessário ter um conhecimento básico de lógica de programação e já ter desenvolvido qualquer coisa, mesmo que simples, em alguma linguagem de programação.',
