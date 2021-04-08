@@ -1,7 +1,8 @@
 import { Subtitle } from '../../components/Subtitle'
-import { SocialLinks } from '~/components/SocialLinks'
+import { Link } from '~/components/Link'
 
-
+import Github from './icons/gh.svg'
+import Linkedin from './icons/linkedin.svg'
 
 
 export const AboutBruno = () => (
@@ -16,7 +17,20 @@ export const AboutBruno = () => (
         Foi Front-end Tech Lead na Neoway, Mobile Tech Lead na Juntos Somos Mais, desenvolveu sozinho uma plataforma de vistoria veicular, o Insper, que já fez dezenas de milhares de vistorias, e tem mais de 3 milhões de fotos tiradas pelo aplicativo. Atualmente é Head de Tecnologia na Setta.co, onde conseguiu guiar o time e liberar seu primeiro MPV, já nos primeiros dois meses.
        </p>
        <div className="flex justify-center md:justify-start">
-        <SocialLinks color="white"/>
+       <div className="flex">
+        <Link
+          as={Linkedin}
+          name="Linkedin"
+          href="https://www.linkedin.com/in/brunobertolini/"
+          color="white"
+        />
+        <Link
+          as={Github}
+          name="Github"
+          href="https://github.com/brunobertolini"
+          color="white"
+        />
+      </div>
        </div>
       </div>
       <div className="w-full">

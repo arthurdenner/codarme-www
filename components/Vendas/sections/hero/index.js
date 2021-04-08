@@ -35,11 +35,9 @@ export const Hero = () => (
         </div>
     </div>
    
-    <div className="flex w-full justify-center mt-12 md:hidden">
-      <SocialLinks color="white"/>
-    </div>
+    
     <div className="flex w-full justify-end mt-12 md:hidden">
-    <img className="block md:hidden" src="/img/element-header.png" />
+      <img className="block md:hidden" src="/img/element-header.png" />
     </div>
   </section>
 )
