@@ -18,7 +18,7 @@ const CardReviewText = ({ title, text }) => (
 export const Reviews = () => (
   <section className="mt-20">
     <Subtitle>Relatos <span className="text-green">de quem conhece</span> nosso trabalho</Subtitle>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <CardReviewText title="Marcelo Dib Coutinho" text="Curso excelente, ensina os principais fundamentos da linguagem, boas práticas de programação, e com alguns extras que facilitam o entendimento. Recomendo muito fazer esse curso antes de tentar aprender qualquer framework de javascript."/>
       <CardReviewText title="Leonardo Ferreira" text="Decomplicado, sem ego ou vaidade, apenas humildade e um extremo conhecimento... parabéns, você faz a diferenca no nosso pais, pode ter certeza"/>
       <CardReviewText title="Matheus Costa Luz" text="Uma coisa é achar tutoriais...
