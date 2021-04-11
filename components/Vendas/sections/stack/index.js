@@ -23,7 +23,7 @@ const CardStack = ({ icon, text, title }) => (
 export const Stack = () => (
   <section className="mt-20">
     <Subtitle>Como iremos <span className="text-green">construir</span> tudo isso?</Subtitle>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
       <CardStack number="01" title="Javascript" icon={JsIcon} text="A linguagem usada no desenvolvimento do projeto do curso! Escolhemos essa linguagem por ser versátil e estar em alta no mercado."/>
       <CardStack number="02" title="NodeJS" icon={NodeIcon} text="Como vamos utilizar JS, Node é nossa opção de backend."/>
       <CardStack number="03" title="React e React Native" icon={ReactIcon} text="Uma das bibliotecas mais famosas e utilizadas para criar sistemas de todos tipos e tamanhos"/>
