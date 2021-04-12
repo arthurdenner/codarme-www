@@ -44,7 +44,7 @@ export const Garantia = () => (
       <p className="text-white mt-16 mb-32 lg:w-2/3">Isso mesmo, <span className="font-bold">sem nenhuma condição</span>, se no primeiro mês você achar que o curso não é pra você, pode simplesmente <span className="font-bold">mandar um email</span> pedindo seu dinheiro de volta, <span className="font-bold">e nós te devolvemos</span>, simples assim!!</p>
     </div>
   
-    <h2 className="text-2xl lg:text-4xl mb-16">Aprenda a desenvolver softaware de  <span className="text-green">verdade</span></h2>
+    <h2 className="text-2xl lg:text-4xl mb-16">Aprenda a desenvolver software de  <span className="text-green">verdade</span></h2>
     <div className="flex items-center justify-center">
     <p className="lg:w-2/3">
       O caminho para quem quer se tornar um desenvolvedor acima da média não é fácil e nem curto, leva tempo pra conseguir chegar lá, mas podemos te ajudar e encurtar muito esse caminho, vamos?
@@ -55,5 +55,6 @@ export const Garantia = () => (
       <Price />
    </div>
  </section>
-   
+  
 )
+
